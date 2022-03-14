@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start": "ts-node-dev --poll src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-session": "^2.0.44",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/pg": "^8.6.4",
+    "dotenv": "^16.0.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.1",
+    "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "ts-node-dev": "^1.1.8",
+    "winston": "^3.6.0",
+    "winston-daily-rotate-file": "^4.6.1"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@config": "./src/config",
+    "@database": "./src/database",
+    "@logging": "./src/utils/logging"
+  }
+}
